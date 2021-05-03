@@ -17,6 +17,9 @@
                 <img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg">
               </a>
             </div>
+            <div class="header-burger">
+              <span></span>
+            </div>
   
             <nav class="nav">
               <ul class="nav_list">
@@ -41,6 +44,7 @@
               </ul>
             </nav>
           </div>
+          
           <h1 class="header-title">блог о творчестве,спорте и образе жизни</h1>
         </div>
       </div>
@@ -48,45 +52,45 @@
     <h2 class="section-tittle-trend">сейчас в тренде</h2>
 
     <section class="trend">
-      <div class="trend-item-garden">
+      <div class="trend-item trend-item-one">
         <div class="trend-item-content">
           <ul class="section-tag">
             <li class="section-tag-items"><a href="#0" class="section-tag-link">lifestyle</a></li>
             <li class="section-tag-items"><a href="#0" class="section-tag-link-one">interior</a></li>
-          </ul>
-          </div>
+          </ul>          
           <h2 class="articles-tittle"><a href="#0" class="tittle-press-link">сейчас в тренде:сад на подоконнике</a></h2>
+      </div>
       </div>
 
 
-        <div class="trend-item-cheese">
+        <div class="trend-item trend-item-two">
           <div class="trend-item-content">
             <ul class="section-tag">
               <li class="section-tag-items"><a href="#0" class="section-tag-link">food</a>
-            </ul>
-            </div>
+            </ul> 
             <h2 class="articles-tittle"><a href="#0" class="tittle-press-link">сыры на красивых картинках из интернета:какие они?</a></h2>
+        </div>
         </div>
         
       
-  <div class="trend-item-travel">
+  <div class="trend-item trend-item-three">
     <div class="trend-item-content">
       <ul class="section-tag">
         <li class="section-tag-items"><a href="#0" class="section-tag-link">lyfestyle</a></li>
         <li class="section-tag-items"><a href="#0" class="section-tag-link-one">travel</a></li>
         </ul>
-    </div>
         <h2 class="articles-tittle"><a href="#0" class="tittle-press-link">собираемся в первый поход в горы</a></h2>
   </div>
+  </div>
   
-  <div class="trend-item-lemon">
+  <div class="trend-item trend-item-four">
     <div class="trend-item-content">
       <ul class="section-tag">
         <li class="section-tag-items"><a href="#0" class="section-tag-link">food</a></li>
         <li class="section-tag-items"><a href="#0" class="section-tag-link-one">travel</a></li>
       </ul>
-      </div>
       <h2 class="articles-tittle"><a href="#0" class="tittle-press-link">сейчас в тренде:сколько витамина с в лимонах</a></h2>
+  </div>
   </div>
     </section>
   
@@ -476,5 +480,34 @@
       </div>
     </footer>
   
+    <div class="popup-container">
+<div class="popup" id="popup">
+  <div class="popup-close">
+  </div>
+  <form class="popup-form">
+    <h2 class="popup-titlle">ваш фидбэк</h2>
+    <p class="popup-content">как часто вы заходите на сайт</p>
+    <select type="text" class="popup-select">
+      <option value="everyday" class="popup-content">Почти каждый день</option>
+      <option value="every_week" class="popup-content">каждую неделю</option>
+    </select>
+    <p class="popup-content">Вы подписаны на e-mail рассылку?</p>
+    <label class="yes" class="popup-label">
+      <input type="radio" class="popup-radio" id="yes" name="popup-radio" required checked>
+      <span class="checkbox-text popup-content">Да</span>
+    </label>
+    <label class="no" class="popup-label">
+      <input type="radio" class="popup-radio" id="no" name="popup-radio" required>
+      <span class="checkbox-text popup-content">Нет</span>
+    </label>
+    <p class="popup-content">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
+    <label class="popup-input">
+      <span class="visually-hidden">Введите ваши пожелания</span>
+      <textarea id="popup-input" placeholder="Может, больше рецептов?"></textarea>
+    </label>
+    <button class="press_button">Отправить</button>
+  </form>
+</div>
+</div>
   </body>
   </html>
