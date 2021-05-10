@@ -14,10 +14,10 @@
   font-style: normal;
 }
 
-*{
-   margin:0;
-   padding:0;
-   box-sizing:border-box;
+*, *::before, *::after {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 .container {
@@ -26,10 +26,10 @@
   padding: 0 15px;
 }
 
-.banner{
+.banner {
   padding: 25px 0 125px 0;
 	position: relative;
-	background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+  background-image: url('../images/banner-bg.jpg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -89,11 +89,9 @@
   font-family: "OpenSans-Regular";
 }
 
-
 .nav_link {
   margin-right: 30px;
 }
-
 
 .header_inner {
   display: flex;
@@ -137,50 +135,46 @@
   background-color: #b59f5b;
   margin: 10px auto 0;
 }
+
 .trend {
   display: flex;
   margin: 0 auto;
   
 }
 
+.trend-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+  width: 25%;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
 
-.trend-item-garden {
+.trend-item:not(:last-child) {
+  margin-right: 4px;
+}
+
+.trend-item-one {
   background-image: url("../images/trend1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 410px;
-  height: 320px;
-  margin-right: 4px;
 }
 
-.trend-item-cheese {
+.trend-item-two {
   background-image: url("../images/trend2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 414px;
-  height: 320px;
-  margin-right: 4px;
 }
 
-.trend-item-travel {
+.trend-item-three {
   background-image: url("../images/trend3.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 415px;
-  height: 320px;
-  margin-right: 4px;
 }
 
-.trend-item-lemon {
+.trend-item-four {
   background-image: url("../images/trend4.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 410px;
-  height: 320px;
+}
+
+.trend-item-content {
+  width: 100%;
 }
 
 .section-tag-link {
